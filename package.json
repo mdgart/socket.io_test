@@ -1,0 +1,9 @@
+{
+	"name": "socketio-test",
+	"version": "0.0.1",
+	"author": "Mauro",
+	"dependencies" : {
+		"socket.io"   :  "*",
+		"express"   :  "*"
+	}
+}
