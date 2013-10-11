@@ -5,8 +5,8 @@ var express = require('express')
     , io = require('socket.io').listen(server);
 
 var port = 80;
-if (process.env.NODE_LOCAL_ENV == true) port = 8080;
-server.listen(8080);
+if (process.env.NODE_LOCAL_ENV) port = 8080;
+server.listen(port);
 
 app.get('/', function (req, res) {
    res.sendfile(__dirname + "/index.html");
